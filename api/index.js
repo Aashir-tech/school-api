@@ -2,8 +2,8 @@ const express = require("express");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT;
-const schoolRoutes = require("../routes/school");
+// const PORT = process.env.PORT;
+const schoolRoutes = require("../routes/school.js");
 
 app.use(express.json());
 
