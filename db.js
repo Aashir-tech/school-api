@@ -9,13 +9,13 @@ const db = mysql.createPool({
   database: process.env.DB_NAME,
 });
 
-db.connect((err) => {
-    if(err) {
-        console.error("Error connecting with my sql " , err.stack);
-        return;
-    }
+// db.connect((err) => {
+//     if(err) {
+//         console.error("Error connecting with my sql " , err.stack);
+//         return;
+//     }
 
-    console.log("Connected with MySql")
-})
+//     console.log("Connected with MySql")
+// })
 
 module.exports = db.promise()
