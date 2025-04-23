@@ -13,7 +13,7 @@ app.get("/" , (req,res) => {
     })
 })
 
-app.use('/' , schoolRoutes);
+app.use('/api' , schoolRoutes);
 
 
 app.listen(PORT , () => {
